@@ -1,6 +1,4 @@
 # Blog Template with MongoDB.
 
 ## Composing New Post
-'''
-url/compose 
-'''
+add /compose at the end of the home page url.
