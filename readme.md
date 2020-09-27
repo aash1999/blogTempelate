@@ -1,5 +1,6 @@
-#Blog Template with MongoDB.
+# Blog Template with MongoDB.
 
-##Composing New Post
-
-url : '''<url>/compose'''
+## Composing New Post
+'''
+url/compose 
+'''
