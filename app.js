@@ -79,20 +79,17 @@ app.get("/posts/:postName", function(req, res){
     console.log(data)
     posts=data
     //(posts)
-    setTimeout(()=>{
-      posts.forEach(function(post){
-        const storedTitle = _.lowerCase(post.title);
+    posts.forEach(function(post){
+      const storedTitle = _.lowerCase(post.title);
 
-        if (storedTitle === requestedTitle) {
-          res.render("post", {
-            title: post.title,
-            content: post.content
-          });
-        }
-      });
-
-
-    },1000)
+      if (storedTitle === requestedTitle) {
+        res.render("post", {
+          title: post.title,
+          content: post.content
+        });
+      }
+    });
+    
 
 
   })
